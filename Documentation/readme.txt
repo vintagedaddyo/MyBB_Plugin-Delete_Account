@@ -1,4 +1,4 @@
- * MyBB: Delete Account
+  * MyBB: Delete Account
  *
  * Authors: MyBB Security Group (Paul H.) & Vintagedaddyo
  *
@@ -18,4 +18,24 @@
 
 Enjoy :D
 
-* version 1.3 for MyBB 1.8.x usage by Vintagedaddyo
+* version 1.3 for MyBB 1.8.x usage by Vintagedaddyo done on mybb 1.8.22
+
+* current localization
+
+- english
+- englishgb
+
+
+Changelog:
+
+7/16/20 @minor edits:
+
+- minor tweaks for 1.8.x usage done on php 7.x
+- cleaned up lang files ** mostly frontend lang cleanup for removal of acp lang specific content 
+
+- Added current pkg file dir to pkg dir (adding upload & doc primary's for initial edit dist share)
+- minor edits to get restore option that wasn't already running re-running
+- added dist readme file in documentation (1)
+- added dist license file in documentation (1)
+- added basic preview files (2)
+- added file wide header code commenting for more descriptive file info within dist dir
