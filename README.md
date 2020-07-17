@@ -1,0 +1,1 @@
+# MyBB_Plugin-Delete_Account
