@@ -522,7 +522,18 @@ function deleteaccount_admin()
 					
 			// Delete the user
 
-			$db->update_query("posts", array('uid' => 0), "uid='{$user['uid']}'");
+			// Updates deleted post user id as guestin post
+
+                        $db->update_query("posts", array('uid' => 0), "uid='{$user['uid']}'");
+                        
+                        // Rather deleted user id related posts delete? 
+
+			//$db->delete_query("posts", "uid='{$user['uid']}'");
+
+			// Rather deleted user id related threads delete?
+
+			//$db->delete_query("threads", "uid='{$user['uid']}'");
+
 
 			$db->delete_query("userfields", "ufid='{$user['uid']}'");
 
