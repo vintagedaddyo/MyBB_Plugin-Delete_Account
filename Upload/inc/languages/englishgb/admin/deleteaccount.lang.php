@@ -8,11 +8,11 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.3
+ * Plugin Version: 1.4
  *
  */
 
-//English language pack for Delete Account plugin by Paul H./MyBB Security
+// EnglishGB language pack for Delete Account plugin
 
 $l['da_are_you_sure'] = 'Are you sure you want to delete your account?  If so, continue.  If not, hit the back button on your browser or close the page.';
 
@@ -61,5 +61,9 @@ $l['da_settings_desc'] = 'Settings for the Delete Account plugin.';
 $l['da_settings_normgroup_name'] = 'Groups';
 
 $l['da_settings_normgroup_desc'] = 'A CSV of groups that can delete their accounts.';
+
+$l['da_settings_tpdeletion_name'] = 'Enable Posts/Threads deletion';
+
+$l['da_settings_tpdeletion_desc'] = 'By default the admin permanent deletion process does not remove the deleted user threads & posts and instead retains them and marks them as the deleted user posted as a guest. If you would like to enable thread and post deletion during the admin permanent deletion process you can enable it here by selecting yes or disable it by selecting no.';
 
 ?>
