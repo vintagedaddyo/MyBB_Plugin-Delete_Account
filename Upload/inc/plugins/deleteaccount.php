@@ -534,18 +534,20 @@ function deleteaccount_admin()
 			}		
 					
 			// Delete the user
-			  if($mybb->settings['deleteaccount_tpdeletion'] == '0')
-		{
-			$db->update_query("threads", array('uid' => 0), "uid='{$user['uid']}'");			        	     
-			$db->update_query("posts", array('uid' => 0), "uid='{$user['uid']}'");
-  }
-  
-if($mybb->settings['deleteaccount_tpdeletion'] == '1')
-		{        	     
-   $db->delete_query("threads", "uid='{$user['uid']}'");
 
-   $db->delete_query("posts", "uid='{$user['uid']}'");
-  }
+			if($mybb->settings['deleteaccount_tpdeletion'] == '0')
+		        {
+			$db->update_query("threads", array('uid' => 0), "uid='{$user['uid']}'");			        	     
+			
+                        $db->update_query("posts", array('uid' => 0), "uid='{$user['uid']}'");
+                        }
+  
+                        if($mybb->settings['deleteaccount_tpdeletion'] == '1')
+		        {        	     
+                        $db->delete_query("threads", "uid='{$user['uid']}'");
+
+                        $db->delete_query("posts", "uid='{$user['uid']}'");
+                        }
     
       
 			$db->delete_query("userfields", "ufid='{$user['uid']}'");
