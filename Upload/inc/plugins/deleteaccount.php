@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.3
+ * Plugin Version: 1.4
  *
  */
 
@@ -56,7 +56,7 @@ $lang->da_delete_account_desc = '<form action="https://www.paypal.com/cgi-bin/we
 		"website"		=> "http://www.mybbsecurity.net",
 		"author"		=> "MyBB Security Group & updated by Vintagedaddyo",
 		"authorsite"	=> "http://www.mybbsecurity.net",
-		"version"		=> "1.3",
+		"version"		=> "1.4",
 		"guid" 			=> "",
 		"compatibility" => "18*"
 	);
@@ -96,8 +96,19 @@ function deleteaccount_install()
 	);
 
 	$db->insert_query('settings', $setting);
-		
-	
+
+	$setting = array(
+		'name'			=> 'deleteaccount_tpdeletion',
+		'title'			=> $db->escape_string($lang->da_settings_tpdeletion_name),
+		'description'	=> $db->escape_string($lang->da_settings_tpdeletion_desc),
+		'optionscode'	=> 'yesno',
+		'value'			=> '0',
+		'disporder'		=> 2,
+		'gid'			=> intval($gid),
+	);
+
+	$db->insert_query('settings', $setting);
+					
 	rebuild_settings();
 
 	//make our DB table - a clone of the defualt MyBB users table
@@ -226,6 +237,8 @@ function deleteaccount_uninstall()
 	
 	$db->query("DELETE FROM ".TABLE_PREFIX."settings WHERE name IN ('deleteaccount_normgroups')");
 
+	$db->query("DELETE FROM ".TABLE_PREFIX."settings WHERE name IN ('deleteaccount_tpdeletion')");
+	
 	$db->query("DELETE FROM ".TABLE_PREFIX."settinggroups WHERE name='deleteaccount'");
 
 	rebuild_settings();
@@ -521,20 +534,20 @@ function deleteaccount_admin()
 			}		
 					
 			// Delete the user
+			  if($mybb->settings['deleteaccount_tpdeletion'] == '0')
+		{
+			$db->update_query("threads", array('uid' => 0), "uid='{$user['uid']}'");			        	     
+			$db->update_query("posts", array('uid' => 0), "uid='{$user['uid']}'");
+  }
+  
+if($mybb->settings['deleteaccount_tpdeletion'] == '1')
+		{        	     
+   $db->delete_query("threads", "uid='{$user['uid']}'");
 
-			// Updates deleted post user id as guestin post
-
-                        $db->update_query("posts", array('uid' => 0), "uid='{$user['uid']}'");
-                        
-                        // Rather deleted user id related posts delete? 
-
-			//$db->delete_query("posts", "uid='{$user['uid']}'");
-
-			// Rather deleted user id related threads delete?
-
-			//$db->delete_query("threads", "uid='{$user['uid']}'");
-
-
+   $db->delete_query("posts", "uid='{$user['uid']}'");
+  }
+    
+      
 			$db->delete_query("userfields", "ufid='{$user['uid']}'");
 
 			$db->delete_query("privatemessages", "uid='{$user['uid']}'");
