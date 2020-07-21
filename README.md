@@ -33,6 +33,12 @@ Changelog:
 - english
 - englishgb
 
+7/21/20 @minor edits:
+
+- minor cleanup to admin lang files to remove frontend lang vars
+- minor addition to frontend lang files and template for added notice
+
+
 7/20/20 @minor edits:
 
 - addition of setting to enable/disable thread/post deletion in admin permanent deletion process.
