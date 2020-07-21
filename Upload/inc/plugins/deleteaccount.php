@@ -264,6 +264,7 @@ function deleteaccount()
 		//form
 
 		$page = "{$lang->da_are_you_sure} <br /> <br />
+                         {$lang->da_are_you_sure_note} <br /> <br />
 			<form action=\"usercp.php\" method=\"post\">
 			<textarea id=\"message\" name=\"message\" rows=\"5\" cols=\"50\">{$lang->da_why}</textarea><br /><br />
 			<input type=\"hidden\" name=\"my_post_key\" value=\"{$mybb->post_code}\" />
