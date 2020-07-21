@@ -16,6 +16,8 @@
 
 $l['da_are_you_sure'] = 'Are you sure you want to delete your account?  If so, continue.  If not, hit the back button on your browser or close the page.';
 
+$l['da_are_you_sure_note'] = 'Pease note that you are choosing for your account to be deleted.  If you change your mind an administrator may be able to restore it for you by request, though if you wish for permanent account deletion with no option for account restoration please state such in your deletion reason request below. (Also note that if you wish for full removal of account threads and posts in such permanent deletion request please also state such in your deletion reason request.)';
+
 $l['da_delete_account'] = 'Delete Account';
 
 $l['da_delete_account_name'] = 'Delete Account';
