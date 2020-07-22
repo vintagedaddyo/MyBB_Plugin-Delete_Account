@@ -56,4 +56,8 @@ $l['da_settings_tpdeletion_name'] = 'Enable Posts/Threads deletion';
 
 $l['da_settings_tpdeletion_desc'] = 'By default the admin permanent deletion process does not remove the deleted user threads & posts and instead retains them and marks them as the deleted user posted as a guest. If you would like to enable thread and post deletion during the admin permanent deletion process you can enable it here by selecting yes or disable it by selecting no.';
 
+$l['da_settings_tpdeletion_enabled'] = 'Deleted Accounts <span class="float_right">Threads/Posts deletion: <span style="color: #ffa500;">ON</span></span>';
+
+$l['da_settings_tpdeletion_disabled'] = 'Deleted Accounts <span class="float_right">Threads/Posts deletion: <span style="color: #ff0000;">OFF</span></span>';
+
 ?>
