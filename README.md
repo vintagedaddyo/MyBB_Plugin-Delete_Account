@@ -86,3 +86,29 @@ Ie:
 - added dist license file in documentation (1)
 - added basic preview files (2)
 - added file wide header code commenting for more descriptive file info within dist dir
+
+
+Extra: * so say you are using a theme that has font awesome and you wanr the delete account 
+plugin link in usercp to fit with the font awesome you would need to have something like the 
+following existing in usercp.css for theme with existing font awesome:
+
+For Font Awesome 5 example:
+
+ Link image styling:
+
+.usercp_nav_trash_pmfolder:before{
+      content:"\f2ed";
+}
+
+Overall usercp icon base styling:
+
+.usercp_nav_item:before{
+      font-size:16px;
+      font-family:"Font Awesome 5 Free";
+      font-weight: 900;
+      color: #2C2C2C;
+      width:28px;
+      margin-right:3px;
+      text-align:center;
+      display:inline-block;
+}
