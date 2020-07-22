@@ -37,6 +37,7 @@ Changelog:
 - minor addition to frontend lang files and template for added notice
 
 Ie:
+
 "Pease note that you are choosing for your account to be deleted.  
 If you change your mind an administrator may be able to restore it 
 for you by request, though if you wish for permanent account deletion" 
