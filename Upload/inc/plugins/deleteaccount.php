@@ -54,8 +54,8 @@ $lang->da_delete_account_desc = '<form action="https://www.paypal.com/cgi-bin/we
 		"name"			=> $db->escape_string($lang->da_delete_account_name),
 		"description"	=> $lang->da_delete_account_desc,
 		"website"		=> "http://www.mybbsecurity.net",
-		"author"		=> "MyBB Security Group & updated by Vintagedaddyo",
-		"authorsite"	=> "http://www.mybbsecurity.net",
+		"author"		=> "MyBB Security Group & Vintagedaddyo",
+		"authorsite"	=> "https://github.com/vintagedaddyo/MyBB_Plugin-Delete_Account",
 		"version"		=> "1.4",
 		"guid" 			=> "",
 		"compatibility" => "18*"
@@ -668,4 +668,5 @@ function deleteaccount_admin()
 	
 	}
 }
+
 ?>
