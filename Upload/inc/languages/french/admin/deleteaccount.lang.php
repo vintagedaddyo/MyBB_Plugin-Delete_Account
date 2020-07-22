@@ -56,4 +56,8 @@ $l['da_settings_tpdeletion_name'] = 'Activer la suppression des messages / discu
 
 $l['da_settings_tpdeletion_desc'] = 'Par defaut, le processus de suppression permanente de l administrateur ne supprime pas les fils de discussion et les publications utilisateur supprimes, mais les conserve et les marque comme l utilisateur supprime publie en tant qu invite.  Si vous souhaitez activer la suppression des fils et des publications pendant le processus de suppression permanente de l administrateur, vous pouvez l activer ici en selectionnant oui ou le desactiver en selectionnant non.';
 
+$l['da_settings_tpdeletion_enabled'] = 'Comptes supprimes <span class="float_right">Suppression des discussions/messages: <span style="color: #ffa500;">SUR</span></span>';
+
+$l['da_settings_tpdeletion_disabled'] = 'Comptes supprimes <span class="float_right">Suppression des discussions/messages: <span style="color: #ff0000;">DE</span></span>';
+
 ?>
