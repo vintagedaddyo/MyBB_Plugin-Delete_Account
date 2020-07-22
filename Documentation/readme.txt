@@ -51,7 +51,7 @@ Ie:
 
 "Pease note that you are choosing for your account to be deleted.  
 If you change your mind an administrator may be able to restore it 
-for you by request, though if you wish for permanent account deletion" 
+for you by request, though if you wish for permanent account deletion 
 with no option for account restoration please state such in your 
 deletion reason request below. (Also note that if you wish for full 
 removal of account threads and posts in such permanent deletion request 
