@@ -33,12 +33,14 @@ Changelog:
 - english
 - englishgb
 - espanol
+- french
 
 7/21/20 @minor edits:
 
 - minor cleanup to admin lang files to remove frontend lang vars
 - minor addition to frontend lang files and template for added notice
 - espanol lang files added
+- french lang files added
 
 Ie:
 
