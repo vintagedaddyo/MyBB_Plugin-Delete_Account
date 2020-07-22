@@ -56,4 +56,8 @@ $l['da_settings_tpdeletion_name'] = 'Habilitar la eliminacion de publicaciones /
 
 $l['da_settings_tpdeletion_desc'] = 'De forma predeterminada, el proceso de eliminacion permanente del administrador no elimina los hilos y publicaciones del usuario eliminado y, en cambio, los retiene y los marca como el usuario eliminado publicado como invitado.  Si desea habilitar la eliminacion de subprocesos y publicaciones durante el proceso de eliminacion permanente del administrador, puede habilitarla aqui seleccionando si o deshabilitarla seleccionando no.';
 
+$l['da_settings_tpdeletion_enabled'] = 'Cuentas eliminadas <span class="float_right">Temas/borrado de publicaciones: <span style="color: #ffa500;">EN</span></span>';
+
+$l['da_settings_tpdeletion_disabled'] = 'Cuentas eliminadas <span class="float_right">Temas/borrado de publicaciones: <span style="color: #ff0000;">APAGADO</span></span>';
+
 ?>
