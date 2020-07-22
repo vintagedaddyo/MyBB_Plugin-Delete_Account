@@ -56,4 +56,8 @@ $l['da_settings_tpdeletion_name'] = 'Abilita l eliminazione di post / thread';
 
 $l['da_settings_tpdeletion_desc'] = 'Per impostazione predefinita, il processo di eliminazione permanente dell amministratore non rimuove i thread e i post degli utenti eliminati, ma li conserva e li contrassegna come l utente eliminato pubblicato come ospite.  Se si desidera abilitare il thread e pubblicare l eliminazione durante il processo di eliminazione permanente dell amministratore, e possibile abilitarlo qui selezionando Si o disabilitarlo selezionando No.';
 
+$l['da_settings_tpdeletion_enabled'] = 'Account eliminati <span class="float_right">Cancellazione discussioni/post: <span style="color: #ffa500;">SOPRA</span></span>';
+
+$l['da_settings_tpdeletion_disabled'] = 'Account eliminati <span class="float_right">Cancellazione discussioni/post: <span style="color: #ff0000;">OFF</span></span>';
+
 ?>
