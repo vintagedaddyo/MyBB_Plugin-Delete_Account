@@ -87,7 +87,7 @@ Ie:
 - added basic preview files (2)
 - added file wide header code commenting for more descriptive file info within dist dir
 
-Extra: * so say you are using a theme that has font awesome and you wanr the delete account 
+Extra: * so say you are using a theme that has font awesome and you want the delete account 
 plugin link in usercp to fit with the font awesome you would need to have something like the 
 following existing in usercp.css for theme with existing font awesome:
 
