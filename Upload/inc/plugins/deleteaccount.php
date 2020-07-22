@@ -660,7 +660,17 @@ function deleteaccount_admin()
 			   	$table->construct_row();
 			}
 	
-			$table->output($lang->da_deleted_accounts);
+			if($mybb->settings['deleteaccount_tpdeletion'] == '1')
+		        {  	
+                        $table->output($lang->da_settings_tpdeletion_enabled);	
+		        }	
+	
+                        if($mybb->settings['deleteaccount_tpdeletion'] == '0')
+		        {  	
+                        $table->output($lang->da_settings_tpdeletion_disabled);	
+                        }					
+			
+                        //$table->output($lang->da_deleted_accounts);
 	
 			$page->output_footer();
 		}
