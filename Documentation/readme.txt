@@ -38,7 +38,7 @@ Changelog:
 7/21/20 @minor edits:
 
 - italiano lang files added
-
+- minor lang edit and plugin edit for threads/posts deletion perm status display in user & groups deleted accounts
 
 7/21/20 @minor edits:
 
