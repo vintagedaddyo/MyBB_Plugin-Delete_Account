@@ -4,7 +4,7 @@
  *
  * File: deleteaccount.lang.php
  *
- * Authors: MyBB Security Group (Paul H.) & compat update by Vintagedaddyo
+ * Authors: MyBB Security Group (Paul H.) & Vintagedaddyo
  *
  * MyBB Version: 1.8
  *
