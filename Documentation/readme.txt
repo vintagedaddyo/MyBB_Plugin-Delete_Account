@@ -32,6 +32,13 @@ Changelog:
 - englishgb
 - espanol
 - french
+- italiano
+
+
+7/21/20 @minor edits:
+
+- italiano lang files added
+
 
 7/21/20 @minor edits:
 
