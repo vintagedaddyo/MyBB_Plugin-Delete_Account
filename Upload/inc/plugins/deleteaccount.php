@@ -642,7 +642,7 @@ function deleteaccount_admin()
 
 				$table->construct_cell($user['username'], array('class' => "align_center"));
 
-				$table->construct_cell($user['deletereason'], array('class' => "align_center"));
+				$table->construct_cell(htmlspecialchars_uni($user['deletereason']), array('class' => "align_center"));
 
 				$table->construct_cell(my_date("F j, Y, g:i a",$user['deletedtime']), array('class' => "align_center"));
 
